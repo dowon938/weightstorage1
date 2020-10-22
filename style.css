@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  margin: 10px 10px;
+  padding: 0;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.tab_triger {
+}
+.tab_triger ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.tab_triger ul li {
+  width: 100%;
+}
+.tab_triger ul li label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: "Jost";
+  font-weight: 800;
+  font-style: italic;
+  box-shadow: 3px 3px 4px lightgrey;
+}
+.tab_triger ul li:nth-child(1) label {
+  background: orange;
+}
+.tab_triger ul li:nth-child(2) label {
+  background: antiquewhite;
+}
+.tab_container_wrap {
+}
+.tab_container_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.tab_container_wrap input:checked + .tab_content_box {
+  display: block;
+  position: relative;
+}
+.tab_content_box {
+  padding: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: none;
+  text-align: center;
+}
+.tab_content_box:nth-of-type(1) {
+  background: orange;
+}
+.tab_content_box:nth-of-type(2) {
+  background: antiquewhite;
+}
+.tab_content_box h1 {
+  font-size: 60px;
+  font-style: italic;
+}
+/*========deadlift=========*/
+.dead {
+  max-width: 100%;
+  margin: 10px auto;
+}
+.dead_wrap {
+  display: flex;
+}
+.dead_info_box {
+  display: flex;
+}
+.dead_graph_box {
+  display: flex;
+  flex-flow: column;
+}
+.tab_dead_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.dead_info_box {
+  background: orange;
+  width: 80%;
+  height: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  display: none;
+}
+.dead_graph_box {
+  background: antiquewhite;
+  width: 80%;
+  height: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  display: none;
+}
+
+.dead_wrap input:checked + .dead_info_box {
+  display: flex;
+  align-items: center;
+}
+.dead_wrap input:checked + .dead_graph_box {
+  display: block;
+  justify-content: center;
+}
+
+.dead_img img {
+  width: 80px;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
+.dead_graph img {
+  width: 250px;
+  height: 100px;
+  mix-blend-mode: multiply;
+}
+.dead_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.dead_triger ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-flow: column;
+}
+.dead_triger {
+  width: 20%;
+}
+.dead_triger ul li {
+}
+.dead_triger ul li label {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  height: 65px;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 800;
+  font-style: italic;
+  box-shadow: 3px 3px 4px lightgrey;
+}
+.dead_triger ul li:nth-child(1) label {
+  background: orange;
+}
+.dead_triger ul li:nth-child(2) label {
+  background: antiquewhite;
+}
+/*========deadlift=========*/
+.squat {
+  max-width: 100%;
+  margin: 10px auto;
+}
+.squat_wrap {
+  display: flex;
+}
+.squat_info_box {
+  display: flex;
+}
+.squat_graph_box {
+  display: flex;
+  flex-flow: column;
+}
+.tab_squat_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.squat_info_box {
+  background: orange;
+  width: 80%;
+  height: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  display: none;
+}
+.squat_graph_box {
+  background: antiquewhite;
+  width: 80%;
+  height: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  display: none;
+}
+
+.squat_wrap input:checked + .squat_info_box {
+  display: flex;
+  align-items: center;
+}
+.squat_wrap input:checked + .squat_graph_box {
+  display: block;
+  justify-content: center;
+}
+
+.squat_img img {
+  width: 80px;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
+.squat_graph img {
+  width: 250px;
+  height: 100px;
+  mix-blend-mode: multiply;
+}
+.squat_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.squat_triger ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-flow: column;
+}
+.squat_triger {
+  width: 20%;
+}
+.squat_triger ul li {
+}
+.squat_triger ul li label {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  height: 65px;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 800;
+  font-style: italic;
+  box-shadow: 3px 3px 4px lightgrey;
+}
+.squat_triger ul li:nth-child(1) label {
+  background: orange;
+}
+.squat_triger ul li:nth-child(2) label {
+  background: antiquewhite;
+}
+/*========deadlift=========*/
+.bench {
+  max-width: 100%;
+  margin: 10px auto;
+}
+.bench_wrap {
+  display: flex;
+}
+.bench_info_box {
+  display: flex;
+}
+.bench_graph_box {
+  display: flex;
+  flex-flow: column;
+}
+.tab_bench_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.bench_info_box {
+  background: orange;
+  width: 80%;
+  height: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  display: none;
+}
+.bench_graph_box {
+  background: antiquewhite;
+  width: 80%;
+  height: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 3px 3px 4px lightgrey;
+  display: none;
+}
+
+.bench_wrap input:checked + .bench_info_box {
+  display: flex;
+  align-items: center;
+}
+.bench_wrap input:checked + .bench_graph_box {
+  display: block;
+  justify-content: center;
+}
+
+.bench_img img {
+  width: 80px;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
+.bench_graph img {
+  width: 250px;
+  height: 100px;
+  mix-blend-mode: multiply;
+}
+.bench_wrap input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+.bench_triger ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-flow: column;
+}
+.bench_triger {
+  width: 20%;
+}
+.bench_triger ul li {
+}
+.bench_triger ul li label {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  height: 65px;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 800;
+  font-style: italic;
+  box-shadow: 3px 3px 4px lightgrey;
+}
+.bench_triger ul li:nth-child(1) label {
+  background: orange;
+}
+.bench_triger ul li:nth-child(2) label {
+  background: antiquewhite;
+}
+
+.base {
+  background: chartreuse;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: relative;
+  width: 100px;
+  box-shadow: 3px 3px 4px lightgrey;
+}
+.base:before {
+  border-top: 20px solid pink;
+  border-bottom: 20px solid orange;
+  border-left: 110px solid blue;
+  border-right: 20px solid red;
+  border-bottom-right-radius: 20px;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  box-shadow: 3px 3px 4px lightgrey;
+}
+
+.maincon_number {
+  background-color: orange;
+  width: 100%;
+  height: 150px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px grey;
+}
+.maincon_number:before {
+  border-top: 20px solid blue;
+  border-bottom: 20px solid orange;
+  border-left: 110px solid blue;
+  border-right: 20px solid red;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
